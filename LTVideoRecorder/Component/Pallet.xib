@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Pallet" customModule="LTVideoRecorder" customModuleProvider="target">
+            <connections>
+                <outletCollection property="buttons" destination="Ca1-wu-7dp" collectionClass="NSMutableArray" id="BM4-hI-cy5"/>
+                <outletCollection property="buttons" destination="gI9-d3-lEQ" collectionClass="NSMutableArray" id="7Fg-Ee-LxN"/>
+                <outletCollection property="buttons" destination="eQj-XX-Jsk" collectionClass="NSMutableArray" id="Cgy-RL-2Vv"/>
+                <outletCollection property="buttons" destination="8sO-tP-JIA" collectionClass="NSMutableArray" id="N2p-wg-MMg"/>
+                <outletCollection property="buttons" destination="cIo-a9-3vu" collectionClass="NSMutableArray" id="oQe-VA-F8m"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Fdo-pw-gtg">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="501"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bem-Am-h3X">
+                    <rect key="frame" x="48" y="0.0" width="49" height="250"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ca1-wu-7dp" customClass="DesignableButton" customModule="LTVideoRecorder" customModuleProvider="target">
+                            <rect key="frame" x="7.5" y="108" width="34" height="34"/>
+                            <color key="backgroundColor" red="1" green="0.94901960784313721" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="8qD-s1-GXH"/>
+                                <constraint firstAttribute="width" constant="34" id="q0m-5e-w4f"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="17"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="XIV-Gg-Kyq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gI9-d3-lEQ" customClass="DesignableButton" customModule="LTVideoRecorder" customModuleProvider="target">
+                            <rect key="frame" x="7.5" y="66" width="34" height="34"/>
+                            <color key="backgroundColor" red="1" green="0.58039215686274503" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="BHJ-MR-YJb"/>
+                                <constraint firstAttribute="width" constant="34" id="CSu-Z3-4Au"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="17"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="0vq-Vb-Cg3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQj-XX-Jsk" customClass="DesignableButton" customModule="LTVideoRecorder" customModuleProvider="target">
+                            <rect key="frame" x="7.5" y="150" width="34" height="34"/>
+                            <color key="backgroundColor" red="0.35303371090000002" green="0.72405134579999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="34" id="TaV-iv-C51"/>
+                                <constraint firstAttribute="height" constant="34" id="wpC-0c-nMO"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="17"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="fhQ-Mk-lvx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIo-a9-3vu" customClass="DesignableButton" customModule="LTVideoRecorder" customModuleProvider="target">
+                            <rect key="frame" x="7.5" y="192" width="34" height="34"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="34" id="6S0-3E-hh0"/>
+                                <constraint firstAttribute="height" constant="34" id="c0m-qD-6Wb"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="17"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="wCf-0H-oVw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ca1-wu-7dp" firstAttribute="centerY" secondItem="Bem-Am-h3X" secondAttribute="centerY" id="9V8-b6-DL0"/>
+                        <constraint firstItem="eQj-XX-Jsk" firstAttribute="centerX" secondItem="Ca1-wu-7dp" secondAttribute="centerX" id="Ab2-mu-JZy"/>
+                        <constraint firstAttribute="height" constant="250" id="VIx-cQ-Veb"/>
+                        <constraint firstItem="gI9-d3-lEQ" firstAttribute="centerX" secondItem="Ca1-wu-7dp" secondAttribute="centerX" id="ZOd-IX-jGS"/>
+                        <constraint firstItem="Ca1-wu-7dp" firstAttribute="top" secondItem="gI9-d3-lEQ" secondAttribute="bottom" constant="8" id="aTN-ze-021"/>
+                        <constraint firstAttribute="width" constant="49" id="n2I-YO-zyO"/>
+                        <constraint firstItem="cIo-a9-3vu" firstAttribute="centerX" secondItem="Ca1-wu-7dp" secondAttribute="centerX" id="sCF-ex-tnR"/>
+                        <constraint firstItem="Ca1-wu-7dp" firstAttribute="centerX" secondItem="Bem-Am-h3X" secondAttribute="centerX" id="sSL-hC-CzO"/>
+                        <constraint firstItem="eQj-XX-Jsk" firstAttribute="top" secondItem="Ca1-wu-7dp" secondAttribute="bottom" constant="8" id="snd-SP-BLr"/>
+                        <constraint firstItem="cIo-a9-3vu" firstAttribute="top" secondItem="eQj-XX-Jsk" secondAttribute="bottom" constant="8" id="tOq-BZ-yOf"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sO-tP-JIA" customClass="DesignableButton" customModule="LTVideoRecorder" customModuleProvider="target">
+                    <rect key="frame" x="55.5" y="24" width="34" height="34"/>
+                    <color key="backgroundColor" red="1" green="0.16078431372549018" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="P0t-tx-Rcd"/>
+                        <constraint firstAttribute="width" constant="34" id="Xaf-YA-LX1"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="s7N-UU-fRb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8sO-tP-JIA" firstAttribute="centerX" secondItem="Ca1-wu-7dp" secondAttribute="centerX" id="JCS-ah-iEr"/>
+                <constraint firstItem="gI9-d3-lEQ" firstAttribute="top" secondItem="8sO-tP-JIA" secondAttribute="bottom" constant="8" id="cu5-BB-QNE"/>
+                <constraint firstItem="Bem-Am-h3X" firstAttribute="top" secondItem="Fdo-pw-gtg" secondAttribute="top" id="taq-zM-4Ku"/>
+                <constraint firstItem="Bem-Am-h3X" firstAttribute="centerX" secondItem="Fdo-pw-gtg" secondAttribute="centerX" id="ubT-PM-Uk4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-79.5" y="-29.5"/>
+        </view>
+    </objects>
+</document>

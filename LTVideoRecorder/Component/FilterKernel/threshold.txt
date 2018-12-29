@@ -1,0 +1,9 @@
+
+kernel vec4 thresholdFilter(__sample pixel)
+{
+float luma = (pixel.r * 0.2126) + (pixel.g * 0.7152) + (pixel.b * 0.0722);
+return vec4(step(0.8, luma));
+}
+
+
+

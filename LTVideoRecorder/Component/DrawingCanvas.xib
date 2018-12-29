@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrawingCanvas" customModule="GhostsFace" customModuleProvider="target">
+            <connections>
+                <outlet property="pallet" destination="ewN-MN-saZ" id="kga-f4-ZJE"/>
+                <outlet property="textView" destination="jHy-z8-O1f" id="Chn-fJ-Ke1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewN-MN-saZ" customClass="Pallet" customModule="GhostsFace" customModuleProvider="target">
+                    <rect key="frame" x="5" y="135" width="49" height="250"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="okC-BL-PeK"/>
+                        <constraint firstAttribute="width" constant="49" id="vSc-O7-f43"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jHy-z8-O1f">
+                    <rect key="frame" x="60" y="227.5" width="255" height="52"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="h4n-Rw-ZLu"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jHy-z8-O1f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="0Qi-Cr-Esd"/>
+                <constraint firstItem="ewN-MN-saZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="135" id="3Cn-5g-PKp"/>
+                <constraint firstItem="ewN-MN-saZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="fNE-lO-XxX"/>
+                <constraint firstAttribute="trailing" secondItem="jHy-z8-O1f" secondAttribute="trailing" constant="60" id="gpw-5Y-Ieq"/>
+                <constraint firstItem="jHy-z8-O1f" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-80" id="t2I-xj-5YV"/>
+            </constraints>
+            <point key="canvasLocation" x="-318" y="-60"/>
+        </view>
+    </objects>
+</document>
