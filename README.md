@@ -1,4 +1,4 @@
-This project demonstrates how use CoreImage to add filter, drawing, and text to a video
+This project demonstrates how to use CoreImage to add filter, drawing, and text to a video.
 
 The flow is: 
 - for every frame, get CVPixelBuffer from a AVCaptureSession, convert it to a CIImage instance
