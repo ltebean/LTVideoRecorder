@@ -158,7 +158,6 @@ extension RecorderViewController {
     }
     
     @IBAction func shootButtonPressed(_ sender: Any) {
-        processor.useNextFilter()
         if (state == .ready) {
             shootButton.setTitle("STOP", for: .normal)
             startRecording()
